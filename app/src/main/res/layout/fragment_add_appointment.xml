@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Client"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp"
+        android:letterSpacing="0.05"
+        android:fontFamily="sans-serif-medium" />
+
+    <Spinner
+        android:id="@+id/spinner_clients"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:prompt="@string/select_client"
+        android:padding="8dp"
+        android:dropDownVerticalOffset="8dp" />
+
+    <TextView
+        android:id="@+id/text_selected_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:paddingTop="28dp"
+        android:paddingBottom="10dp"
+        android:letterSpacing="0.03" />
+
+    <TextView
+        android:id="@+id/text_selected_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:paddingBottom="28dp"
+        android:letterSpacing="0.03" />
+
+    <TextView
+        android:id="@+id/text_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:paddingBottom="24dp"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Add Appointment"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="12dp"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"/>
+
+</LinearLayout>
